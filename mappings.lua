@@ -18,5 +18,6 @@ return {
   v = {
     ["J"] = { ":m '>+1<CR>gv=gv", desc = "Move selected block down" },
     ["K"] = { ":m '<-2<CR>gv=gv", desc = "Move selected block up" },
+    ["<leader>r"] = { 'y:%s/<C-r><C-r>"//g<Left><Left>', desc = "Replace selected occurrence in file" },
   },
 }
