@@ -1,5 +1,6 @@
 return {
   n = {
+    ["<leader>h"] = false,
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
