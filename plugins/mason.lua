@@ -24,20 +24,20 @@ return {
       {
         "<leader>lPr",
         function()
-          local null_ls = require "null-ls"
-          null_ls.disable { name = "isort" }
-          null_ls.disable { name = "black" }
-          null_ls.enable { name = "ruff" }
+          local null_ls = require("null-ls")
+          null_ls.disable({ name = "isort" })
+          null_ls.disable({ name = "black" })
+          null_ls.enable({ name = "ruff" })
         end,
         desc = "Enable ruff",
       },
       {
         "<leader>lPb",
         function()
-          local null_ls = require "null-ls"
-          null_ls.disable { name = "ruff" }
-          null_ls.enable { name = "black" }
-          null_ls.enable { name = "isort" }
+          local null_ls = require("null-ls")
+          null_ls.disable({ name = "ruff" })
+          null_ls.enable({ name = "black" })
+          null_ls.enable({ name = "isort" })
         end,
         desc = "Enable black and isort",
       },

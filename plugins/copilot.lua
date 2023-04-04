@@ -20,17 +20,17 @@ return {
     },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
-      local cmp = require "cmp"
-      local lspkind = require "lspkind"
+      local cmp = require("cmp")
+      local lspkind = require("lspkind")
       local api = vim.api
 
       ---@diagnostic disable-next-line: missing-parameter
       opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "copilot" } }))
-      lspkind.init {
+      lspkind.init({
         symbol_map = {
           Copilot = "",
         },
-      }
+      })
       api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#E06C75" })
     end,
   },

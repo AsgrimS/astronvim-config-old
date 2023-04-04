@@ -10,7 +10,7 @@ return {
     -- Undotree config
     swapfile = false,
     backup = false,
-    undodir = os.getenv "HOME" .. "/.vim/undodir",
+    undodir = os.getenv("HOME") .. "/.vim/undodir",
     undofile = true,
   },
   g = {
