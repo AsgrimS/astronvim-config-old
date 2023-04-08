@@ -1,7 +1,6 @@
 return {
   {
     "navarasu/onedark.nvim",
-    lazy = false,
-    priority = 1000,
+    priority = 1000, -- Ensure it loads first
   },
 }
