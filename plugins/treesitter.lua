@@ -12,6 +12,7 @@ return {
       "html",
       "css",
       "scss",
+      "yaml",
     },
   },
 }

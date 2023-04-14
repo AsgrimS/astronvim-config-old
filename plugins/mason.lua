@@ -15,6 +15,7 @@ return {
         "angularls",
         "cssls",
         "tailwindcss",
+        "yamlls",
       },
     },
   },
