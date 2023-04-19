@@ -1,3 +1,14 @@
+local function profile_switcher(to_enable, to_disable)
+  local null_ls = require("null-ls")
+  for _, name in ipairs(to_enable) do
+    null_ls.enable({ name = name })
+  end
+
+  for _, name in ipairs(to_disable) do
+    null_ls.disable({ name = name })
+  end
+end
+
 return {
   {
     "williamboman/mason-lspconfig.nvim",
@@ -22,28 +33,33 @@ return {
   {
     "jay-babu/mason-null-ls.nvim",
     opts = {
-      ensure_installed = { "prettierd", "stylua", "ruff", "rustfmt", "shfmt", "black", "isort" },
+      ensure_installed = {
+        -- JavaScript + other
+        "prettierd",
+        --Lua
+        "stylua",
+        -- Rust
+        "rustfmt",
+        -- Bash
+        "shfmt",
+        -- Python
+        "ruff",
+        "black",
+        "isort",
+        "autopep8",
+        "flake8",
+      },
     },
     keys = {
       {
         "<leader>lPr",
-        function()
-          local null_ls = require("null-ls")
-          null_ls.disable({ name = "isort" })
-          null_ls.disable({ name = "black" })
-          null_ls.enable({ name = "ruff" })
-        end,
-        desc = "Enable ruff",
+        function() profile_switcher({ "ruff", "black" }, { "isort", "flake8", "autopep8" }) end,
+        desc = "Enable ruff profile",
       },
       {
-        "<leader>lPb",
-        function()
-          local null_ls = require("null-ls")
-          null_ls.disable({ name = "ruff" })
-          null_ls.enable({ name = "black" })
-          null_ls.enable({ name = "isort" })
-        end,
-        desc = "Enable black and isort",
+        "<leader>lPf",
+        function() profile_switcher({ "flake8", "autopep8", "isort" }, { "ruff", "black" }) end,
+        desc = "Enable flake8 profile",
       },
     },
   },
