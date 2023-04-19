@@ -14,7 +14,7 @@ return {
       [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
       desc = "Replace all in file",
     },
-    ["<leader>lP"] = { name = "Python" },
+    ["<leader>lP"] = { name = " Python" },
   },
   t = {
     -- setting a mapping to false will disable it
