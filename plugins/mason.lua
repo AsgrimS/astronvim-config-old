@@ -53,12 +53,12 @@ return {
     },
     keys = {
       {
-        "<leader>lPr",
+        "<leader>lpr",
         function() profile_switcher({ "ruff", "black" }, { "isort", "flake8", "autopep8" }) end,
         desc = "Enable ruff profile",
       },
       {
-        "<leader>lPf",
+        "<leader>lpf",
         function() profile_switcher({ "flake8", "autopep8", "isort" }, { "ruff", "black" }) end,
         desc = "Enable flake8 profile",
       },
