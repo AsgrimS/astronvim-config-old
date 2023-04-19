@@ -72,6 +72,15 @@ return {
           },
         },
       },
+      pyright = {
+        settings = {
+          python = {
+            analysis = {
+              diagnosticMode = "openFilesOnly",
+            },
+          },
+        },
+      },
     },
   },
   -- Configure require("lazy").setup() options
