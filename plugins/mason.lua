@@ -48,18 +48,18 @@ return {
         "black",
         "isort",
         "autopep8",
-        "flake8",
+        -- "flake8",
       },
     },
     keys = {
       {
         "<leader>lpr",
-        function() profile_switcher({ "ruff", "black" }, { "isort", "flake8", "autopep8" }) end,
+        function() profile_switcher({ "ruff", "black" }, { "isort", "autopep8" }) end,
         desc = "Enable ruff profile",
       },
       {
         "<leader>lpf",
-        function() profile_switcher({ "flake8", "autopep8", "isort" }, { "ruff", "black" }) end,
+        function() profile_switcher({ "autopep8", "isort" }, { "ruff", "black" }) end,
         desc = "Enable flake8 profile",
       },
     },

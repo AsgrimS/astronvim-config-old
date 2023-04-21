@@ -1,6 +1,5 @@
 return {
   n = {
-    ["<leader>h"] = false,
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
@@ -15,6 +14,7 @@ return {
       desc = "Replace all in file",
     },
     ["<leader>lp"] = { name = " Python" },
+    ["<leader>h"] = { name = "", desc = "󰛢 Harpoon" },
   },
   t = {
     -- setting a mapping to false will disable it
