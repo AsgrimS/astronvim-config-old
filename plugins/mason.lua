@@ -27,6 +27,7 @@ return {
         "cssls",
         "tailwindcss",
         "yamlls",
+        "prismals",
         -- "pylyzer" keep an eye on this
       },
     },

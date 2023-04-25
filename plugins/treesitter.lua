@@ -13,6 +13,7 @@ return {
       "css",
       "scss",
       "yaml",
+      "prisma",
     },
   },
 }
