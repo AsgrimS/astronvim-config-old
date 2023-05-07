@@ -28,7 +28,7 @@ return {
       opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "copilot" } }))
       lspkind.init({
         symbol_map = {
-          Copilot = "",
+          Copilot = " ",
         },
       })
       api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#E06C75" })
