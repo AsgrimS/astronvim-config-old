@@ -28,6 +28,7 @@ return {
         "tailwindcss",
         "yamlls",
         "prismals",
+        "taplo",
         -- "pylyzer" keep an eye on this
       },
     },
