@@ -29,6 +29,8 @@ return {
         "yamlls",
         "prismals",
         "taplo",
+        "dockerls",
+        "docker_compose_language_service",
         -- "pylyzer" keep an eye on this
       },
     },
