@@ -6,6 +6,7 @@ return {
       "python",
       "javascript",
       "typescript",
+      "tsx",
       "svelte",
       "rust",
       "json",
@@ -14,6 +15,7 @@ return {
       "scss",
       "yaml",
       "prisma",
+      "toml",
     },
   },
 }
