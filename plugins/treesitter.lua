@@ -16,6 +16,7 @@ return {
       "yaml",
       "prisma",
       "toml",
+      "jsdoc",
     },
   },
 }
