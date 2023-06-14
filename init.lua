@@ -83,6 +83,15 @@ return {
           },
         },
       },
+      rust_analyzer = {
+        settings = {
+          ["rust-analyzer"] = {
+            checkOnSave = {
+              command = "clippy",
+            },
+          },
+        },
+      },
     },
     setup_handlers = {
       rust_analyzer = function(_, opts) require("rust-tools").setup({ server = opts }) end, -- setup rust-tools
