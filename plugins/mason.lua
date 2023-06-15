@@ -50,21 +50,6 @@ return {
         -- Python
         "ruff",
         "black",
-        "isort",
-        "autopep8",
-        -- "flake8",
-      },
-    },
-    keys = {
-      {
-        "<leader>lpr",
-        function() profile_switcher({ "ruff", "black" }, { "isort", "autopep8" }) end,
-        desc = "Enable ruff profile",
-      },
-      {
-        "<leader>lpf",
-        function() profile_switcher({ "autopep8", "isort" }, { "ruff", "black" }) end,
-        desc = "Enable flake8 profile",
       },
     },
   },
