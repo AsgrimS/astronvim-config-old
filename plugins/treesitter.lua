@@ -17,6 +17,7 @@ return {
       "prisma",
       "toml",
       "jsdoc",
+      "sql",
     },
   },
 }

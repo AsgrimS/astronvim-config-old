@@ -92,6 +92,9 @@ return {
           },
         },
       },
+      -- sqlls = {
+      --   cmd = { "sql-language-server", "up", "--method", "stdio" },
+      -- },
     },
     setup_handlers = {
       rust_analyzer = function(_, opts) require("rust-tools").setup({ server = opts }) end, -- setup rust-tools
