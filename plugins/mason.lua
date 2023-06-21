@@ -31,8 +31,6 @@ return {
         "taplo",
         "dockerls",
         "docker_compose_language_service",
-        "sqlls",
-        -- "pylyzer" keep an eye on this
       },
     },
   },
@@ -52,8 +50,7 @@ return {
         "ruff",
         "black",
         -- SQL
-        "sqlfmt",
-        -- "sqlfluff",
+        "sqlfluff",
       },
     },
   },
