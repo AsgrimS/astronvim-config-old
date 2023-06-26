@@ -14,21 +14,30 @@ return {
     "williamboman/mason-lspconfig.nvim",
     opts = {
       ensure_installed = {
+        -- Lua
         "lua_ls",
+        -- JavaScript + HTML + CSS
         "svelte",
         "tsserver",
-        "pyright",
-        "jsonls",
-        "html",
         "eslint",
-        "rust_analyzer",
-        "bashls",
         "angularls",
         "cssls",
         "tailwindcss",
-        "yamlls",
+        "html",
         "prismals",
+        -- Python
+        "pyright",
+        -- JSON
+        "jsonls",
+        -- Rust
+        "rust_analyzer",
+        -- Bash
+        "bashls",
+        -- SQL
+        "yamlls",
+        -- TOML
         "taplo",
+        -- Docker
         "dockerls",
         "docker_compose_language_service",
       },
