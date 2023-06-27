@@ -74,15 +74,15 @@ return {
           },
         },
       },
-      pyright = {
-        settings = {
-          python = {
-            analysis = {
-              diagnosticMode = "openFilesOnly",
-            },
-          },
-        },
-      },
+      -- pyright = {
+      --   settings = {
+      --     python = {
+      --       analysis = {
+      --         diagnosticMode = "openFilesOnly",
+      --       },
+      --     },
+      --   },
+      -- },
       rust_analyzer = {
         settings = {
           ["rust-analyzer"] = {
