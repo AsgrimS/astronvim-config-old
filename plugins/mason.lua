@@ -59,6 +59,7 @@ return {
         -- Bash
         "shfmt",
         -- Python
+        "mypy",
         -- "ruff",
         "black",
         -- SQL
