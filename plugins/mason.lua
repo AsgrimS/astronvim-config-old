@@ -64,6 +64,8 @@ return {
         "black",
         -- SQL
         "sqlfluff",
+        -- TOML
+        "taplo",
       },
     },
   },

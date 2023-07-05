@@ -44,6 +44,7 @@ return {
         "cssls",
         "jsonls",
         "docker_compose_language_service",
+        "taplo",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function

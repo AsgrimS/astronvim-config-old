@@ -19,6 +19,16 @@ return {
       null_ls.builtins.formatting.sqlfluff.with({
         extra_args = { "--dialect", "postgres" },
       }),
+      null_ls.builtins.formatting.taplo.with({
+        extra_args = {
+          "--option",
+          "array_auto_collapse=false",
+          "--option",
+          "reorder_arrays=true",
+          "--option",
+          "indent_string=    ",
+        },
+      }),
     }
     return config -- return final config table
   end,
