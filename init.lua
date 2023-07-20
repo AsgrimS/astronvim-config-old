@@ -75,15 +75,6 @@ return {
           },
         },
       },
-      -- pyright = {
-      --   settings = {
-      --     python = {
-      --       analysis = {
-      --         diagnosticMode = "openFilesOnly",
-      --       },
-      --     },
-      --   },
-      -- },
       rust_analyzer = {
         settings = {
           ["rust-analyzer"] = {
@@ -93,9 +84,25 @@ return {
           },
         },
       },
+      pylsp = {
+        -- After installation run PylspInstall pylsp-mypy pylsp-rope python-lsp-black python-lsp-ruff
+        settings = {
+          pylsp = {
+            plugins = {
+              pycodestyle = {
+                enabled = false,
+              },
+              rope_autoimport = {
+                enabled = true,
+              },
+            },
+          },
+        },
+      },
     },
     setup_handlers = {
       rust_analyzer = function(_, opts) require("rust-tools").setup({ server = opts }) end, -- setup rust-tools
+      -- pylsp = function(_, opts) require("pylsp").setup({ server = opts }) end, -- setup pylsp
     },
   },
 

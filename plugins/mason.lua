@@ -26,10 +26,9 @@ return {
         "html",
         "prismals",
         -- Python
-        -- "pyright",
-        "jedi_language_server",
-        -- "pylsp",
-        "ruff_lsp",
+        -- "jedi_language_server",
+        "pylsp",
+        -- "ruff_lsp",
         -- JSON
         "jsonls",
         -- Rust
@@ -59,9 +58,9 @@ return {
         -- Bash
         "shfmt",
         -- Python
-        "mypy",
+        -- "mypy",
         -- "ruff",
-        "black",
+        -- "black",
         -- SQL
         "sqlfluff",
         -- TOML
