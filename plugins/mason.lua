@@ -26,9 +26,7 @@ return {
         "html",
         "prismals",
         -- Python
-        -- "jedi_language_server",
         "pylsp",
-        -- "ruff_lsp",
         -- JSON
         "jsonls",
         -- Rust
@@ -53,14 +51,8 @@ return {
         "prettierd",
         --Lua
         "stylua",
-        -- Rust
-        "rustfmt",
         -- Bash
         "shfmt",
-        -- Python
-        -- "mypy",
-        -- "ruff",
-        -- "black",
         -- SQL
         "sqlfluff",
         -- TOML

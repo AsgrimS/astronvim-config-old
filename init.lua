@@ -102,7 +102,6 @@ return {
     },
     setup_handlers = {
       rust_analyzer = function(_, opts) require("rust-tools").setup({ server = opts }) end, -- setup rust-tools
-      -- pylsp = function(_, opts) require("pylsp").setup({ server = opts }) end, -- setup pylsp
     },
   },
 
