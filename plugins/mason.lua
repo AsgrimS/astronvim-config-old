@@ -33,7 +33,7 @@ return {
         "rust_analyzer",
         -- Bash
         "bashls",
-        -- SQL
+        -- YAML
         "yamlls",
         -- TOML
         "taplo",
