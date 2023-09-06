@@ -99,6 +99,27 @@ return {
           },
         },
       },
+      tailwindcss = {
+        filetypes = {
+          "css",
+          "scss",
+          "sass",
+          "postcss",
+          "html",
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+          "svelte",
+          "vue",
+          "rust",
+        },
+        init_options = {
+          userLanguages = {
+            rust = "html",
+          },
+        },
+      },
     },
     setup_handlers = {
       rust_analyzer = function(_, opts) require("rust-tools").setup({ server = opts }) end, -- setup rust-tools

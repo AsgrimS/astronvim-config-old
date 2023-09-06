@@ -57,6 +57,8 @@ return {
         "sqlfluff",
         -- TOML
         "taplo",
+        -- Tailwind
+        "rustywind",
       },
     },
   },

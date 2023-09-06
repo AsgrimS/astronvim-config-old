@@ -43,6 +43,9 @@ return {
           "indent_string=    ",
         },
       }),
+      null_ls.builtins.formatting.rustywind.with({
+        extra_filetypes = { "rust" },
+      }),
       leptosftm,
     }
 
