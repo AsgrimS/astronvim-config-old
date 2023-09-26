@@ -15,6 +15,10 @@ return {
     },
     ["<leader>lp"] = { name = " Python" },
     ["<leader>h"] = { name = "", desc = "󰛢 Harpoon" },
+    ["<leader>td"] = {
+      function() require("astronvim.utils").toggle_term_cmd("lazydocker") end,
+      desc = "ToggleTerm lazydocker",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
