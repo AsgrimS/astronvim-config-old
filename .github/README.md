@@ -40,3 +40,7 @@ nvim
   - [go DiskUsage()](https://github.com/dundee/gdu) - disk usage toggle terminal (`<leader>tu`)
   - [Python](https://www.python.org/) - python repl toggle terminal (`<leader>tp`)
   - [Node](https://nodejs.org/en/) - node repl toggle terminal (`<leader>tn`)
+
+### ChatGPT Plugin Requirements:
+
+OpenAI API token is currently loaded from `bw get notes ChatGPT` command. (Bitwarden CLI)

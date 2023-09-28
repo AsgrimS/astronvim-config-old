@@ -19,6 +19,7 @@ return {
       function() require("astronvim.utils").toggle_term_cmd("lazydocker") end,
       desc = "ToggleTerm lazydocker",
     },
+    ["<leader>tg"] = { "<cmd>ChatGPT<cr>", desc = "ChatGPT" },
   },
   t = {
     -- setting a mapping to false will disable it
