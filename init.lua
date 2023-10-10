@@ -84,6 +84,14 @@ return {
             cargo = {
               features = "all",
             },
+            proc_macro = {
+              ignored = {
+                leptos_macro = {
+                  "server",
+                  "component",
+                },
+              },
+            },
           },
         },
       },
