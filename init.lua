@@ -84,14 +84,6 @@ return {
             cargo = {
               features = "all",
             },
-            proc_macro = {
-              ignored = {
-                leptos_macro = {
-                  "server",
-                  "component",
-                },
-              },
-            },
           },
         },
       },
@@ -107,27 +99,6 @@ return {
                 enabled = true,
               },
             },
-          },
-        },
-      },
-      tailwindcss = {
-        filetypes = {
-          "css",
-          "scss",
-          "sass",
-          "postcss",
-          "html",
-          "javascript",
-          "javascriptreact",
-          "typescript",
-          "typescriptreact",
-          "svelte",
-          "vue",
-          "rust",
-        },
-        init_options = {
-          userLanguages = {
-            rust = "html",
           },
         },
       },
@@ -152,16 +123,16 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     ["Foofile"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
+    vim.filetype.add {
+      extension = {
+        postcss = "css",
+      },
+      -- filename = {
+      --   ["Foofile"] = "fooscript",
+      -- },
+      -- pattern = {
+      --   ["~/%.config/foo/.*"] = "fooscript",
+      -- },
+    }
   end,
 }

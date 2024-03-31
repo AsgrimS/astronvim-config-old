@@ -3,22 +3,6 @@ return {
   opts = function(_, config)
     -- config variable is the default configuration table for the setup function call
     local null_ls = require("null-ls")
-
-    local leptosftm = {
-      name = "leptosfmt",
-      meta = {
-        url = "https://github.com/bram209/leptosfmt",
-        description = "A formatter for the leptos view! macro",
-      },
-      method = null_ls.methods.FORMATTING,
-      filetypes = { "rust" },
-      generator = null_ls.formatter({
-        command = "leptosfmt",
-        args = { "-q", "-s" },
-        to_stdin = true,
-      }),
-    }
-
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
     config.sources = {
@@ -43,10 +27,6 @@ return {
           "indent_string=    ",
         },
       }),
-      null_ls.builtins.formatting.rustywind.with({
-        extra_filetypes = { "rust" },
-      }),
-      leptosftm,
     }
 
     return config -- return final config table
