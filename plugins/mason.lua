@@ -19,7 +19,7 @@ return {
         -- JavaScript + HTML + CSS
         "svelte",
         "tsserver",
-        "eslint",
+        "eslint_d",
         "angularls",
         "cssls",
         "tailwindcss",
